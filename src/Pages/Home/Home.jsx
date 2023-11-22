@@ -1,4 +1,5 @@
-import Navbar from "../Shared/Navbar/Navbar";
+
+import { Helmet } from "react-helmet-async";
 import Banner from "./Banner/Banner";
 import Category from "./Category/Category";
 import FeturedItem from "./Fetured/FeturedItem";
@@ -8,7 +9,11 @@ import Testimonials from "./Testimonials/Testimonials";
 const Home = () => {
     return (
         <div>
-            <Navbar/>
+            <Helmet>
+                <title>
+                    Bistro Boss | Home
+                </title>
+            </Helmet>
             <Banner/>
             <Category/>
             <PopularMenu/>
